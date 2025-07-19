@@ -1,0 +1,220 @@
+
+
+.container-product h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.success {
+    color: #28a745;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.error {
+    color: #dc3545;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.container-product {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container-product table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    table-layout: fixed;
+}
+
+.container-product th, td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+    border-right: 1px solid #ddd;
+    background-color: #f4f4f4;
+}
+
+/* Tăng độ cụ thể cho th */
+.container-product table thead th {
+    background-color: #3399FF !important;
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.container-product  tr:hover {
+    background-color: #f5f5f5;
+}
+
+.product-image {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+}
+
+.description {
+    white-space: normal;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.action-btn {
+    background-color: #17a2b8;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    margin: 0 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.activate-btn {
+    background-color: #28a745;
+}
+
+.activate-btn:hover {
+    background-color: #218838;
+}
+
+.update-btn {
+    background-color: #007bff;
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+}
+
+.add-btn {
+    background-color: #17a2b8;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.add-btn:hover {
+    background-color: #138496;
+}
+
+/* Phân bổ chiều rộng cột */
+th:nth-child(1), td:nth-child(1) { width: 5%; min-width: 50px; }
+th:nth-child(2), td:nth-child(2) { width: 15%; min-width: 150px; }
+th:nth-child(3), td:nth-child(3) { width: 15%; min-width: 150px; }
+th:nth-child(4), td:nth-child(4) { width: 20%; min-width: 200px; }
+th:nth-child(5), td:nth-child(5) { width: 8%; min-width: 80px; }
+th:nth-child(6), td:nth-child(6) { width: 8%; min-width: 80px; }
+th:nth-child(7), td:nth-child(7) { width: 8%; min-width: 100px; }
+th:nth-child(8), td:nth-child(8) { width: 8%; min-width: 80px; }
+th:nth-child(9), td:nth-child(9) { width: 10%; min-width: 100px; }
+th:nth-child(10), td:nth-child(10) { width: 8%; min-width: 80px; }
+th:nth-child(11), td:nth-child(11) { width: 10%; min-width: 120px; }
+
+/* Form styles */
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form-group button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+/*phân trang*/
+.pagination {
+    display: flex;
+    justify-content: center; /* Căn giữa */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+    th, td {
+        box-sizing: border-box;
+        text-align: center;
+    }
+}

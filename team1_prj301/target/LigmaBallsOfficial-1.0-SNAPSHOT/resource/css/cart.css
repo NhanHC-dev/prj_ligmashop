@@ -1,0 +1,122 @@
+/* Tổng thể bảng giỏ hàng */
+.cart__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart__table th, .cart__table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+     border-right: 1px solid #ddd;
+}
+
+.cart__table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Thông tin sản phẩm trong giỏ hàng */
+.cart__item-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart__item-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Input số lượng sản phẩm và nút cập nhật */
+.cart__quantity-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cart__item-quantity {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Nút cập nhật số lượng */
+.cart__update-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 50px;
+}
+
+.cart__update-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Nút xóa sản phẩm */
+.cart__item-remove {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cart__item-remove:hover {
+    background-color: #a71d2a;
+}
+
+/* Tổng tiền */
+.cart__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cart__total-amount {
+    color: #e44d26;
+    font-size: 20px;
+}
+
+/* Nút thanh toán */
+.cart__checkout-btn {
+    display: block;
+    text-align: center;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.cart__checkout-btn:hover {
+    background-color: #218838;
+}

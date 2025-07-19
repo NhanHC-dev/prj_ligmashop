@@ -1,0 +1,172 @@
+
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: cacl(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px;
+    --primary:#90ee8e;
+}
+
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", serif;
+    box-sizing: border-box;
+}
+.btn{
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+}
+.select-input{
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 5px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.select-input__label{
+    font-size: 1.4rem;
+}
+.select-input__icon{
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+    top: 1px;
+
+}
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    padding: 8px 16px;
+    background-color: var(--white-color);
+    list-style: none;
+    display: none;
+}
+.select-input:hover .select-input__list{
+    display: block;
+}
+.select-input__link{
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 4px 0;
+}
+.select-input__link:hover{
+    color: red;
+}
+
+/*Pagination*/
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item{
+    display:flex;
+    margin: 0 16px;
+}
+.pagination-item--active .pagination-item__link{
+    color: var(--white-color);
+    background-color:  red;
+    
+}
+.pagination-item__link:hover{
+    background-color: red;
+}
+
+.pagination-item__link{
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
+}
+
+
+/*footer*/
+.footer{
+    padding-top: 16px;
+    border-top: 4px solid red;
+}
+.footer__heading{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #000;    
+}
+.footer__list{
+    padding-left: 0;
+    list-style: none;
+}
+.footer__list-item__link{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #737373;
+    display: flex;
+    align-items: center;
+}
+.footer__list-item__link:hover{
+    color: red;
+}
+.footer__list-item-icon{
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+.footer__download{
+    display: flex;
+}
+.footer__download-qr{
+    width: 80px;
+    object-fit: contain;
+    border: 1px solid red;
+}
+.footer__download-apps{
+    flex: 1;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__bottom{
+    padding: 8px 0;
+    background-color: #f5f5f5;
+    margin-top: 36px;
+}
+.footer__text{
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+}

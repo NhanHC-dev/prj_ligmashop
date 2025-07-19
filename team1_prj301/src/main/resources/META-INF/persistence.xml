@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+  <!-- Define Persistence Unit -->
+  <persistence-unit name="ligmaBallsPU" transaction-type="RESOURCE_LOCAL">
+    <class>model.Categories</class>
+    <class>model.Users</class>
+    <class>model.Orderdetails</class>
+    <class>model.Productviews</class>
+    <class>model.Company</class>
+    <class>model.Colors</class>
+    <class>model.Sizes</class>
+    <class>model.Productimages</class>
+    <class>model.Voucher</class>
+    <class>model.Inventory</class>
+    <class>model.Orderstatus</class>
+    <class>model.ShippingCompanies</class>
+    <class>model.Products</class>
+    <class>model.Cartitems</class>
+    <class>model.PaymentMethods</class>
+    <class>model.Reviews</class>
+    <class>model.Chatmessages</class>
+    <class>model.Cart</class>
+    <class>model.Chatsessions</class>
+    <class>model.ProductCategories</class>
+    <class>model.Productsizecolor</class>
+    <class>model.Shipping</class>
+    <class>model.Orders</class>
+    <class>model.resources.Sizes</class>
+    <class>model.resources.Inventory</class>
+    <class>model.resources.ProductCategories</class>
+    <class>model.resources.Categories</class>
+    <class>model.resources.PaymentMethods</class>
+    <class>model.resources.Orderdetails</class>
+    <class>model.resources.ShippingCompanies</class>
+    <class>model.resources.Orders</class>
+    <class>model.resources.Cartitems</class>
+    <class>model.resources.Users</class>
+    <class>model.resources.Company</class>
+    <class>model.resources.Reviews</class>
+    <class>model.resources.Products</class>
+    <class>model.resources.Shipping</class>
+    <class>model.resources.Voucher</class>
+    <class>model.resources.Productsizecolor</class>
+    <class>model.resources.Orderstatus</class>
+    <class>model.resources.Cart</class>
+    <class>model.resources.Productimages</class>
+    <class>model.resources.Colors</class>
+    <class>model.resources.Productviews</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=LigmaShop;encrypt=false;trustServerCertificate=false"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
